@@ -1,0 +1,171 @@
+<div *ngIf="!connected" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+	<div class="col-md-5 p-lg-5 mx-auto my-5">
+		<h1 class="display-4 font-weight-normal">Profil</h1>
+		<p class="lead font-weight-normal">
+			Pls <a class="py-2 d-none d-md-inline-block" routerLink="/signin">sign-in</a>
+			to access to your profile </p>
+
+	</div>
+</div>
+
+
+<div *ngIf="connected" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+	<div class="col-md-5 p-lg-5 mx-auto my-5">
+		<h1 class="display-4 font-weight-normal">Profile</h1>
+
+		<br /><br /><br />
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-sm-8 col-lg-6">
+					<!-- Section Heading-->
+					<div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s"
+						style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+						<h3>Edit <span> profile</span></h3>
+					</div>
+				</div>
+			</div>
+
+			<br /><br /><br />
+			<div class="row justify-content-center bg-white">
+				<div class="col-md col-12 col-sm-8 col-lg-6">
+					<br /><br /><br /><b> Edit my personnal informations :</b>
+					<br /><br /><br />
+          clic droit : inspecter l'élément -> cf commentaire (parti optionnel, priorité aux autres fonctionnalités)
+					<!--	//Normalement je passerai par du php avec un form où le form aura pr root : "" <br>
+        et donc executera le php <?php que je mettrais juste après le "< form >" <br>
+        qui traitera la modification de la str name / surname ou bien la suppression : <br>
+        qui en réalité ne supprimera pas du datastore mais passera un paramètre (isDelete initialisé à False),<br>
+        de l'user souhaitant supprimer son compte, à "true", et ainsi cet user ne sera plus sélectionnés par les variables <br>
+        followers / friends etc <br>
+        avec le principe d'entité et du datastore , appliquer un set propriete pr modifier le paramètre isDelete to true <br>
+        et ensuite lorsqu'on voudra récupérer des données de la table friends par exemple on filtrera avec un setFIlter < br>supplémentaire parmis ma requete affiche moi suelement les users dont isDelete is false <br>
+        On évite de supprimer de la base de donnée, on préférera désactiver les users <br><br><br> -->
+
+					<br />
+					<br />
+					<br />
+					<label for="name">Switch Name :</label><br />
+
+					<input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="4"
+            maxlength="8"
+            size="10"
+          /><br /><br />
+					<button>Valider</button><br /><br />
+
+					<br />
+					<label for="surname">Switch Surname :</label><br />
+
+					<input
+            type="text"
+            id="surname"
+            name="surname"
+            required
+            minlength="4"
+            maxlength="8"
+            size="10"
+          /><br /><br />
+					<button>Valider</button><br /><br />
+
+					<br />
+					<label for="mail">Switch mail adress:</label><br />
+
+					<input
+            type="email"
+            id="mail"
+            name="mail"
+            required
+            minlength="4"
+            maxlength="18"
+            size="20"
+          /><br /><br />
+					<button>Valider</button><br /><br />
+
+					<label for="phone">Phone :</label><br />
+
+					<input
+            type="number"
+            id="phone"
+            name="phone"
+            required
+            minlength="10"
+            maxlength="10"
+            size="12"
+          /><br /><br />
+					<button>Valider</button><br /><br />
+
+
+					<label for="birthDate">Birth Date :</label><br />
+
+					<input
+            type="date"
+            id="birthDate"
+            name="birthDate"
+            required
+            minlength="8"
+            maxlength="8"
+            size="12"
+          /><br /><br />
+					<button>Valider</button><br /><br />
+
+					<label for="pass">Password:</label><br />
+
+					<input
+            type="password"
+            id="pass"
+            name="pass"
+            required
+            minlength="8"
+            maxlength="20"
+            size="20"
+          /><br /><br />
+					<button>Valider</button><br /><br />
+
+					<br /><br /><br />
+        </div>
+				</div>
+			</div>
+
+			<br /><br /><br />
+
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-8 col-lg-6">
+						<!-- Section Heading-->
+						<div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s"
+							style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+							<h3>Friends <span> List</span></h3>
+						</div>
+					</div>
+				</div>
+
+				<br /><br /><br />
+
+				<div class="row justify-content-center">
+					<div *ngFor="let follower of ownFollowers" class="col-md col-12 col-sm-8 col-lg-6">
+						{{follower.name}} <br />
+          {{follower.surname}}<br />
+          IsFollowBy : {{follower.followerIds}}<br />
+          Follow: {{follower.followIds}}<br />
+						<br />
+						<br />
+						<a href="" class="designation">See {{follower.name}}'s profile :<br /><br />
+							<img
+              src="https://image.flaticon.com/icons/png/128/25/25634.png"
+              alt="Profil de votre amis"
+            />
+          </a>
+							<br /><br />
+							<button>Unfollow</button>
+
+							<br /><br /><br /><br /><br />
+        </div>
+					</div>
+				</div>
+			</div>
+		</div>
