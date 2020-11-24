@@ -5,7 +5,7 @@
 On va gérer le côté client de notre application Tinygram, utilisation d'angular, et de ngrx. 
 
 Installation : 
-Nécessite npm (installer node)
+Nécessite npm (installer node) <br><br>
 **"npm install"** puis <br>
 **"npm start"**
 
