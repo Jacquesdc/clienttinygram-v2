@@ -39,7 +39,7 @@ Un service par ressource (un pour le post, et un pour les users)
 
 Pour exemple le User : l'information ne vient pas du serveur mais de google (c'est google qui dit si le token est valide et si l'user est bien connecté). 
 
-Dans le cas de local.Storage, c'est les navigateurs qui stockent les données (session de navigateur : données stockées précèdemment). 
+Dans le cas de local.Storage, c'est les navigateurs qui stockent les données (session de navigateur : données stockées précèdemment). <br>
 Et dans le cas de l'api : on appelle le serveur  <a target="_blank" href="https://model-zoo-290312.ew.r.appspot.com/"> https://model-zoo-290312.ew.r.appspot.com/</a> à l'adresse de l'api. 
 
 Le but du service c'est d'avoir des données accessibles partout dans l'application 
