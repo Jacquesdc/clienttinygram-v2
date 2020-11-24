@@ -1,4 +1,6 @@
-# <a target="_blank" href="https://clienttinygram-sws3gs.stackblitz.io/">https://clienttinygram-sws3gs.stackblitz.io/</a>
+# <a href="https://clienttinygram-sws3gs.stackblitz.io/">https://clienttinygram-sws3gs.stackblitz.io/</a>
+# <a href="https://clienttinygram.stackblitz.io/">https://clienttinygram.stackblitz.io/</a>
+
 
 On va gérer le côté client de notre application Tinygram, utilisation d'angular, et de ngrx. 
 
