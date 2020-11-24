@@ -6,8 +6,8 @@ On va gérer le côté client de notre application Tinygram, utilisation d'angul
 
 Installation : 
 Nécessite npm (installer node)
-"npm install" puis <br>
-"npm start"
+**"npm install"** puis <br>
+**"npm start"**
 
 
 
@@ -17,17 +17,17 @@ Nécessite npm (installer node)
 
 Tinygram possède divers components (home / about / signin / contact / not-found entres autres) qui chacun auront une section correspondante côté front-end : 
 
-Home représente la timeline, qui affiche les posts, en prenant en compte leur id, et les affiche par ordre décroissant (this.posts = inversedPosts.reverse(); dans le home.component.ts en passant par la méthode reverse()). 
+**Home** représente la timeline, qui affiche les posts, en prenant en compte leur id, et les affiche par ordre décroissant (**this.posts = inversedPosts.reverse();** dans le home.component.ts en passant par la méthode reverse()). 
 
 
-About représente le profile, il n'est pas finalisé mais le but de cette section est de permettre à l'utilisateur de consulter son profil et 
+**About** représente le profile, il n'est pas finalisé mais le but de cette section est de permettre à l'utilisateur de consulter son profil et 
 d'y éditer ses informations personnelles (nom, prénom, mail, téléphone ...) ainsi que d'y consulter la liste de ses amis (et d'accéder à leur profil). 
 
-not-found quant à lui correspond au cas où la route, l'url ne correspond pas. 
+**Not-found** quant à lui correspond au cas où la route, l'url ne correspond pas. 
 
-Contact correspond à la partie "followers" où il serait possible d'"unfollow" un de ses amis, et on pourrait concevoir une partie avec messagerie. 
+**Contact** correspond à la partie "followers" où il serait possible d'"unfollow" un de ses amis, et on pourrait concevoir une partie avec messagerie. 
 
-Enfin la partie sign-in permet à l'utilisateur de s'authentifier via google sign in 
+Enfin la partie **Sign-In** permet à l'utilisateur de s'authentifier via google sign in 
 
 
 
