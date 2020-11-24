@@ -5,7 +5,7 @@
 On va gérer le côté client de notre application Tinygram, utilisation d'angular, et de ngrx. 
 
 '''
-npm install
+npm install <br>
 npm start
 '''
 
