@@ -1,10 +1,16 @@
-# clienttinygram-sws3gs
+# <a target="_blank" href="https://clienttinygram-sws3gs.stackblitz.io/">https://clienttinygram-sws3gs.stackblitz.io/</a>
 
 On va gérer le côté client de notre application Tinygram, utilisation d'angular, et de ngrx. 
 
-#Components de notre application : 
+'''
+npm install
+npm start
+'''
 
-Un composant représente une fraction de l'UI (user interface : interface utilisateur). 
+
+## Components de notre application : 
+
+#### Un composant représente une fraction de l'UI (user interface : interface utilisateur). 
 
 Tinygram possède divers components (home / about / signin / contact / not-found entres autres) qui chacun auront une section correspondante côté front-end : 
 
@@ -22,16 +28,16 @@ Enfin la partie sign-in permet à l'utilisateur de s'authentifier via google sig
 
 
 
-#Services de notre application : 
+## Services de notre application : 
 
-Les services permettent d'accéder à différentes ressources. 
+#### Les services permettent d'accéder à différentes ressources. 
 
 Un service par ressource (un pour le post, et un pour les users) 
 
 Pour exemple le User : l'information ne vient pas du serveur mais de google (c'est google qui dit si le token est valide et si l'user est bien connecté). 
 
 Dans le cas de local.Storage, c'est les navigateurs qui stockent les données (session de navigateur : données stockées précèdemment). 
-Et dans le cas de l'api : on appelle le serveur  https://model-zoo-290312.ew.r.appspot.com/ à l'adresse de l'api. 
+Et dans le cas de l'api : on appelle le serveur  <a target="_blank" href="https://model-zoo-290312.ew.r.appspot.com/"> https://model-zoo-290312.ew.r.appspot.com/</a> à l'adresse de l'api. 
 
 Le but du service c'est d'avoir des données accessibles partout dans l'application 
 
